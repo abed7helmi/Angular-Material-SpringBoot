@@ -25,6 +25,8 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StudentsComponent } from './students/students.component';
 import { PaymentsComponent } from './payments/payments.component';
+import { LoadStudentsComponent } from './load-students/load-students.component';
+import { LoadPaymentsComponent } from './load-payments/load-payments.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { PaymentsComponent } from './payments/payments.component';
     LoginComponent,
     DashboardComponent,
     StudentsComponent,
-    PaymentsComponent
+    PaymentsComponent,
+    LoadStudentsComponent,
+    LoadPaymentsComponent
   ],
   imports: [
     BrowserModule,
