@@ -1,16 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import {MatTableDataSource} from "@angular/material/table";
+import {MatPaginator} from "@angular/material/paginator";
+import {MatSort} from "@angular/material/sort";
 
 @Component({
   selector: 'app-students',
   templateUrl: './students.component.html',
   styleUrls: ['./students.component.css']
 })
-export class StudentsComponent implements OnInit {
+export class StudentsComponent implements OnInit , AfterViewInit{
 
   public students : any ;
   public dataSource : any ;
   public displayedColumns = ["id","firstName" , "lastName","payments"]
+
+  // pour faire la pagination et le sort
+  @ViewChild(MatPaginator) paginator! : MatPaginator;
+  @ViewChild(MatSort) sort! : MatSort;
   constructor() { }
 
   ngOnInit(): void {
@@ -31,6 +37,17 @@ export class StudentsComponent implements OnInit {
     this.dataSource = new MatTableDataSource(this.students)
     console.log(this.dataSource)
 
+  }
+
+  // apres l'initialisation des données
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator
+    this.dataSource.sort = this.sort;
+  }
+
+  filterStudents(event: Event) {
+    let value = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = value;
   }
 
 }
