@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AuthenticationService} from "../services/authentification.service";
 
 @Component({
   selector: 'app-admin-template',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminTemplateComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(public authService : AuthenticationService) {
+  }
+  ngOnInit() {
   }
 
+  logout() {
+    this.authService.logout();
+  }
 }

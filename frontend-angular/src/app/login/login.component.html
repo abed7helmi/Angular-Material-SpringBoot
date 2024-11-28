@@ -1,5 +1,5 @@
-<div class="login-container">
-  <mat-card >
+<div class="login-container" *ngIf="loginFormGroup">
+  <mat-card [formGroup]="loginFormGroup">
     <mat-card-header>
       <mat-card-title>Authentication</mat-card-title>
     </mat-card-header>
@@ -17,7 +17,7 @@
     <mat-card-actions align="end">
       <button
         mat-raised-button color="primary"
-
+        (click)="login()"
       >Login</button>
     </mat-card-actions>
   </mat-card>
