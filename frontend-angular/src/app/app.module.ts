@@ -27,6 +27,8 @@ import { StudentsComponent } from './students/students.component';
 import { PaymentsComponent } from './payments/payments.component';
 import { LoadStudentsComponent } from './load-students/load-students.component';
 import { LoadPaymentsComponent } from './load-payments/load-payments.component';
+import {AuthGuard} from "./guards/auth.guard";
+import {AuthorizationGuard} from "./guards/authorization.guard";
 
 @NgModule({
   declarations: [
@@ -63,7 +65,9 @@ import { LoadPaymentsComponent } from './load-payments/load-payments.component';
     BrowserAnimationsModule
 
   ],
-  providers: [],
+  providers: [
+    AuthGuard,AuthorizationGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
