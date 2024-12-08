@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcf03889-e104-4165-9226-694ef0d7b457" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/angular-spring.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-angular" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-angular/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-angular/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-angular/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-angular/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-angular/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-angular/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-angular/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-angular/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-angular/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-angular/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-angular/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-angular/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/frontend-angular" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -35,21 +24,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/episen/Bureau/projects/angular-spring/frontend-angular/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.BackendStudentsSpringApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/home/episen/Bureau/projects/angular-spring/frontend-angular/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="BackendStudentsSpringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="backend-students-spring" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.helmi.backendstudentsspring.BackendStudentsSpringApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -69,7 +68,10 @@
       <workItem from="1732224098422" duration="1353000" />
       <workItem from="1732225757646" duration="3791000" />
       <workItem from="1732286710445" duration="887000" />
-      <workItem from="1732361585019" duration="1270000" />
+      <workItem from="1732361585019" duration="8017000" />
+      <workItem from="1732568690683" duration="2024000" />
+      <workItem from="1732827520032" duration="4558000" />
+      <workItem from="1733693542539" duration="2137000" />
     </task>
     <servers />
   </component>
