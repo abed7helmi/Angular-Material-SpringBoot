@@ -3,6 +3,8 @@ import {MatTableDataSource} from "@angular/material/table";
 import {MatPaginator} from "@angular/material/paginator";
 import {MatSort} from "@angular/material/sort";
 import {Router} from "@angular/router";
+import {StudentService} from "../services/student.service";
+import {Student} from "../model/student.model";
 
 @Component({
   selector: 'app-students',
@@ -11,32 +13,25 @@ import {Router} from "@angular/router";
 })
 export class StudentsComponent implements OnInit , AfterViewInit{
 
-  public students : any ;
-  public dataSource : any ;
+  public dataSource! : MatTableDataSource<Student> ;
   public displayedColumns = ["id","firstName" , "lastName","payments"]
-
+  students! : Array<Student>
   // pour faire la pagination et le sort
   @ViewChild(MatPaginator) paginator! : MatPaginator;
   @ViewChild(MatSort) sort! : MatSort;
-  constructor(private router : Router) { }
+  constructor(private router : Router , private studentService : StudentService) { }
 
   ngOnInit(): void {
 
-    this.students = []
-    for (let i = 1; i<100 ; i++){
-
-      this.students.push(
-        {
-          id : i,
-          firstName : Math.random().toString(20),
-          lastName : Math.random().toString(20),
-        }
-      );
-
-    }
-
-    this.dataSource = new MatTableDataSource(this.students)
-    console.log(this.dataSource)
+    this.studentService.getStudents().subscribe({
+      next : value => {
+        this.students = value
+        this.dataSource = new MatTableDataSource<Student>(this.students)
+      },
+      error : err => {
+        console.log(err)
+      }
+    })
 
   }
 
@@ -51,8 +46,8 @@ export class StudentsComponent implements OnInit , AfterViewInit{
     this.dataSource.filter = value;
   }
 
-  getPayments(student : any) {
-    this.router.navigateByUrl("/payments")
+  getPayments(student : Student) {
+    this.router.navigateByUrl("admin/student-details/"+student.code)
   }
 
 }

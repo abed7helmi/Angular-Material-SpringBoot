@@ -7,6 +7,33 @@
 
     <mat-divider></mat-divider>
     <mat-card-content>
+<!--      <table>-->
+<!--        <thead>-->
+<!--          <tr>-->
+<!--            <th>ID</th>-->
+<!--            <th>firstName</th>-->
+<!--            <th>Last NAme</th>-->
+<!--            <th>Code</th>-->
+<!--            <th>Program ID</th>-->
+<!--          </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--          @for (s of students; track s){-->
+<!--            -->
+<!--              &lt;!&ndash;          <tr *ngFor="let s of students">&ndash;&gt;-->
+<!--            <tr>-->
+<!--              <td>{{s.id}}</td>-->
+<!--              <td>{{s.firstName}}</td>-->
+<!--              <td>{{s.lastName}}</td>-->
+<!--              <td>{{s.code}}</td>-->
+<!--              <td>{{s.programId}}</td>-->
+<!--            </tr>-->
+<!--          }-->
+
+<!--        </tbody>-->
+<!--      </table>-->
+
+
       <mat-form-field appearance="outline">
         <mat-label>Filter</mat-label>
         <input matInput (change)="filterStudents($event)">
